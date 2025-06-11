@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bottle Flip Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ad-screen">
+    <video id="ad-video" src="assets/ad.mp4" autoplay muted></video>
+    <button id="skip-btn" disabled>Skip Ad</button>
+  </div>
+
+  <div id="game-screen">
+    <button id="start-btn">Start Game</button>
+    <div id="three-container"></div>
+    <p id="message"></p>
+    <button id="replay-btn" style="display:none;">Replay</button>
+
+    <audio id="sound-landed" src="assets/landed.mp3"></audio>
+    <audio id="sound-missed" src="assets/missed.mp3"></audio>
+  </div>
+
+  <!-- CDN via jsDelivr and UNPKG -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
